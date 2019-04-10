@@ -1,0 +1,24 @@
+<div *ngIf="salesSummaryData.length === 0">{{dataStatusInfo}}</div>
+<div class="salesScreen-height">
+	<ul class="tablex salesTable salesMed">
+	  <table *ngIf="!salesSummaryData.length == 0" class="table-resp">
+	    <thead>
+	      <tr *ngIf="years !== undefined">
+	        <th align="left"> </th>
+	        <th align="middle" style="text-align:center;">{{years[0]}}</th>
+	        <th align="middle" style="text-align:center;">{{years[1]}}</th>
+	        <th align="middle" style="text-align:center;">{{years[2]}}</th>
+	        <th align="middle" style="text-align:center;"><b><span style="font-weight: bold;">{{years[3]}}</span></b><span style="text-transform:none"><br>current</span></th>
+	        <th align="middle" style="text-align:center;"><strong>YoY %&Delta;</strong></th>
+	      </tr>
+	    </thead>
+	        <tbody>
+	          <tr *ngFor="let psData of salesSummaryData">
+	            <td style="text-align:center" valign="left">{{psData.title}}</td>
+	            <td *ngFor="let progress of progressList" style="text-align:center;" [ngClass]="{'up': psData[progress].progress == 'UP' , 'down': psData[progress].progress == 'DOWN'}" valign="middle"><span *ngIf="psData[progress].currency === true">{{psData[progress].currencyFormat}}</span>{{psData[progress].data}}<span *ngIf = "psData[progress].data == null">-</span><span *ngIf="psData[progress].rate === true">%</span>&nbsp;&nbsp;<i *ngIf="psData[progress].progress != null" class="fa fa-arrow-left"></i></td>               
+              <td style="text-align:center;" [ngClass]="{'progressYOY': psData.YOY.progress == 'UP' , 'noProgressYOY': psData.YOY.progress == 'DOWN'}" valign="middle">{{psData.YOY.data}}%<span *ngIf = "psData.YOY.data == null">-</span></td>         
+            </tr>
+	        </tbody>
+	  </table>
+	</ul>
+</div>

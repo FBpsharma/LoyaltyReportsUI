@@ -1,0 +1,16 @@
+.up .fa {
+    transform: rotate(-225deg);
+    color:green;
+}
+.down .fa {
+    transform: rotate(-135deg);
+    color:red;
+}
+.progressYOY {
+    color:green;
+    font-weight: bold;
+}
+.noProgressYOY {
+    color:red;
+    font-weight: bold;
+}

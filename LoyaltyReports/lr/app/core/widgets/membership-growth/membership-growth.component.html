@@ -1,0 +1,19 @@
+<!-- <div class="chart-wrap membership-growth" style="height:100%; width:100%">
+	<div id="membershipByGrowthContainer">
+		<div class="tileWatermark" *ngIf = "membershipGrowthData.length == 0">{{dataStatusInfo}}</div>
+		<div *ngIf = "!membershipGrowthData.length == 0" id="membershipByMonthChart" style="height:100%; width:100%"></div>
+	</div>
+	<span class="membership_tile"><img *ngIf = "!membershipGrowthData.length == 0" src="assets/imgs/membership_tile.png"></span>
+</div> -->
+
+<!-- <div>Membership Growth content</div> -->
+<!-- <div id="membershipGrowthContainer">FusionCharts will render here</div> -->
+<div *ngIf = "!membershipGrowthData.length == 0">
+	<fusioncharts
+		[chartConfig]=chartConfig
+		[dataSource]=dataSource >
+	</fusioncharts>	
+</div>
+<div *ngIf = "membershipGrowthData.length == 0">{{dataStatusInfo}}</div>
+
+

@@ -1,0 +1,669 @@
+.btn-fixed{position:fixed; top:42%; left:0; right:0; margin:0 auto; width:14%}
+.bgblue-text, .bgblue-text:focus{min-width:auto; max-width:inherit; margin-left:0!important; padding:9px 15px 10px}
+.bgblue-text i{color:#fff; font-size:18px;}
+.padder.small{max-width:800px;margin:0 auto;padding:0;margin-bottom:20px}
+.padder.small .shift{margin:20px 50px}
+.sub_container{max-width:900px;margin:0 auto;border:1px solid #ccc;border-bottom:0}
+.p_sub_header{background:#e9f7ff;text-align:right;overflow:hidden;margin:0;border-top-left-radius:3px;padding-top:5px;border-bottom:1px solid #ccc}
+.p_sub_header.pad{padding:10px;text-align:left}
+.p_sub_header a{color:#000;padding:12px 0 0;display:inline-block}
+.sub_container .labelx{float:left;display:inline-block;padding:10px;color:#000;font-size:14px;font-weight:300}
+.list_controls li{padding:15px 0;border-bottom:1px solid #ccc}
+ul.days li:nth-child(2n){background:#f9f9f9}
+.list_controls input,.list_controls select{margin:0}
+.list_controls li img{margin:0 5px 0 0}
+.list_controls li span{padding:10px 0 0}
+.bb1px{ border-bottom:1px solid #ccc}
+.input-group-btn.open{position:absolute;display:block;visibility:visible;top:-220px;left:100px}
+ul.days li{border:1px solid #ccc;text-align:center;padding:12px 10px; display:inline-block;color:#000;margin:0 10px 10px 0;border-radius:3px}
+ul.days li:last-child{ margin-right:0}
+timepicker-pop.input-group.ng-pristine.ng-untouched.ng-valid.ng-isolate-scope{ margin:0 0 10px}
+#dy_timer_control{max-width:150px;margin:0 0 0}
+.rewards .input-wrapper{margin-bottom:10px}
+.rewards #dy_timer_control{margin:0}
+.rewards .btn-link{padding:0;border:0}
+.rewards .btn-link:hover{background:none}
+.rewards .list_controls li span{padding:5px}
+.rewards table .form-control{width:90% !important;margin:10px auto}
+.rewards .padder.oh input[type="checkbox"]{visibility:visible;margin-top:5px}
+.p_sub_header_title{float:left;padding:10px;font-weight:300;color:#000;font-size:14px}
+h5.sub-header{padding-left:0px;padding-top:5px}
+div.border-box{border:1px solid #e8e8e8;border-top:0px}
+div.border-box .timePanels1,div.border-box .timePanels{padding:15px}
+.padding-box{padding-left:15px;padding-right:15px}
+ul#monthly li.activeDay,ul#weekly li.activeDay{background:#00a7e2;border-color:#00a7e2;color:#fff}
+timepicker-pop .dropdown-menu.pull-right{top:250px;left:-90px}
+timepicker-pop.input-group{position:relative}
+.timePanels1{padding:0 20px}
+.list_controls li span.padders{padding:25px 0 0}
+.list_controls .pull-right-x{padding-top:15px}
+#cockpitsContainer .detailed{background:#fff;overflow:hidden;padding:0 0 0}
+.cockpit #cockpitsContainer .padder.minx .x-spec-button.back{background-position:4px -316px !important}
+.lb1{ border-left:1px solid #ddd}
+div[ng-controller='loyaltyCockpitWidgetCtrl'] .table-resp td:nth-of-type(2),
+div[ng-controller='loyaltyCockpitWidgetCtrl'] .table-resp td:nth-of-type(3){text-align:right}
+#loyaltyDBContainer .box-header-btns{padding:10px}
+#loyaltyDBContainer .box-header-btns a{width:20px;height:20px;display:block;padding:0;margin:0}
+#loyaltyDBContainer .box-header-btns a:hover{background:none}
+#loyaltyDBContainer .segmentSelection .tfooter,
+#loyaltyDBContainer .tile_medium .tfooter{border:0 none;background:none;width:auto;height:auto;padding:0;margin:0;min-height:inherit;top:-33px;right:28px}
+#loyaltyDBContainer .segmentSelection .tfooter > ul > li,
+#loyaltyDBContainer .tile_medium .tfooter > ul > li{border:0 none;margin:0 5px;padding:0;height:20px;border-radius:0;background:none;width:auto}
+#loyaltyDBContainer .segmentSelection .tfooter .radio input + .radio_text:before,
+#loyaltyDBContainer .tile_medium .tfooter .radio input + .radio_text:before{/*background:url(../imgs/sprite.png) no-repeat -85px -1273px;background-size:400px auto;*/height:17px;width:33px;display:block;padding:0;margin:0;top:0}
+#loyaltyDBContainer .segmentSelection .tfooter .radio input:checked + .radio_text:before,
+#loyaltyDBContainer .tile_medium .tfooter .radio input:checked + .radio_text:before{background-position:-125px -1273px}
+#loyaltyDBContainer .segmentSelection .tfooter .x-icon.stats-grey,
+#loyaltyDBContainer .tile_medium .tfooter .x-icon.stats-grey{/*background:url(../imgs/sprite.png) no-repeat -12px -1273px;background-size:400px auto;*/height:17px;width:17px;display:block;padding:0;margin:0}
+#loyaltyDBContainer .segmentSelection .tfooter .x-icon.forwardcustomerCount-grey,
+#loyaltyDBContainer .tile_medium .tfooter .x-icon.forwardcustomerCount-grey{/*background:url(../imgs/sprite.png) no-repeat -197px -1433px;background-size:450px auto;*/height:17px;width:17px;display:block;padding:0;margin:0}
+#loyaltyDBContainer .segmentSelection .tfooter ul.arrowPopup,
+#loyaltyDBContainer .tile_medium .tfooter ul.arrowPopup{top:34px;right:-20px;width:140px;border-radius:5px;background:#fff;box-shadow:0 3px 6px rgba(0,0,0,.175)}
+#loyaltyDBContainer .segmentSelection .tfooter ul.arrowPopup:before,
+#loyaltyDBContainer .tile_medium .tfooter ul.arrowPopup:before{border-width:0 10px 10px;top:-10px;right:25px}
+#loyaltyDBContainer .segmentSelection .tfooter ul.arrowPopup li,
+#loyaltyDBContainer .tile_medium .tfooter ul.arrowPopup li{background:none;width:100%;margin:0;border-right:1px solid #c9e4ed}
+#loyaltyDBContainer .segmentSelection .tfooter ul.arrowPopup li:last-child,
+#loyaltyDBContainer .tile_medium .tfooter ul.arrowPopup li:last-child{border-radius:0 0 5px 0}
+#loyaltyDBContainer .segmentSelection .tfooter ul.arrowPopup li:hover,
+#loyaltyDBContainer .tile_medium .tfooter ul.arrowPopup li:hover{color:#fff;background-color:#4f9dfb}
+.cockpit .chart_container .bgwhite .info-box-value *{color:#999}
+.cockpit .abx{top:4px;right:4px}
+.tfooter .checkbox input + span::before,.tfooter .radio input + span::before,.tfooter .checkbox1 input + span::before,.tfooter .radio input1 + span::before{/*background:url("../imgs/sprite.png") no-repeat scroll -46px -125px;background-size:1338% auto;*/content:" ";display:block;height:36px;left:5px;padding-right:15px;position:absolute;top:3px;vertical-align:top;width:40px}
+.tfooter .radio input:checked + span::before{background-position:-92px -125px}
+.cockpit .customerCount .tfooter .radio input:checked + span::before{background-position:-92px -125px}
+.tfooter.topcat .radio input:checked + span::before{background-position:-92px -125px}
+.tfooter.topsale .radio input:checked + span::before{background-position:-92px -125px}
+.cockpit .segmentSelection .info-box .info-box-value{color:#000}
+.cockpit .customdrops{margin-bottom:0}
+// .cockpit .customdrops.netter{background:#ffcc00 url("/assets/imgs/icon_down_white.png") no-repeat scroll 97% 3px;margin:0;border:1px solid #fff;padding:2px 6px;width:75%;float:right;color:#fff;min-width:100px;background-size:auto 210%}
+.cockpit .customdrops.netter options{background:#fff !important}
+.cockpit .customdrops.netter:hover{background-position:97% -29px}
+// .cockpit .netSales .x-analytics{background:url(../imgs/analytics-netsales.jpg) no-repeat 0 0}
+// .cockpit .customerCount .x-analytics{background:url(../imgs/analytics-customer-count.jpg) no-repeat 0 0;background-size:cover auto}
+.cockpit .bgwhite .relx{min-height:100%;line-height:100%;vertical-align:middle;width:100%;height:100%;padding:0}
+.cockpit .table-resp td,.cockpit .table-resp th{text-align:center;padding:7px 5px;font-size:12px}
+.cockpit .table-resp td:first-child{text-align:left}
+.cockpit .chart_container .pt10{padding:0 10px 20px !important}
+.cockpit .tablex.pt10{padding:0 !important}
+.cockpit .multiSelect > button{min-width:150px}
+.cockpit .bgwhite.dataArea ul.tablex{overflow:hidden;position:relative;display:block;list-style:none;padding:0 !important}
+.cockpit #campaign .table-resp td,.cockpit .table-resp th{text-align:right;padding:7px 5px;font-size:12px}
+.cockpit .box-header-btns{top:2px;right:0;display:none}
+.cockpit .box-header,.cockpit .box-header1{padding:0}
+.cockpit .box-header h3,.cockpit .box-header1 h3{margin:0;padding:14px 0 12px 10px;font-weight:500;color:#000;border-bottom:1px solid #ddd;font-size:14px}
+.cockpit .relx img{max-width:40%;margin:30px auto 5px auto}
+.cockpit .gridster .segment-box-content h4,.cockpit .gridster .segment-box-content h6{color:#666;font-size:12px;padding:5px 0}
+.cockpit .gridster .segment-box-content h3{font-weight:bold;font-size:26px;color:#444}
+.cockpit .gridster .segment-box-content h5{font-size:13px}
+.cockpit #cockpitsContainer .padder.minx .x-spec-button.back{background-position:4px -316px !important}
+#loyaltyDBContainer .box:hover .tfooter{display:block}
+.box:hover .box-header-btns {display: block}
+.tileWatermark{top :80px;opacity:1;font-size:3em;width:100%;text-align:center;z-index:1000}
+#loyaltyDBContainer .box:hover .tfooter{display:block}
+rect.dimple-tooltip{stroke-width:1 !important} 
+text.dimple-tooltip{ padding:2px 2px !important;margin:5px 5px !important;font-size:12px !important;font-weight:normal;font-family:"Myriad Pro" }
+/*ul.filter_icon_ac .x-icon.bgs2000p{background-size:2000% auto}*/
+#rewards-new .secondheading h1.x-title{padding:0;border:0;min-height:auto}
+#rewards-new .secondheading h1.x-title div{ padding:5px 0 0}
+#rewards-new .overflowscroll{ overflow:hidden;overflow-y:scroll;height:80vh}
+#rewards-new h3,#rewards-new h4, #rewardRuleEA h3 { font-size:14px;border-bottom:1px solid #ccc;padding:10px 10px;margin-bottom:0;width:100%;clear:both;display:block;background-color: #E4E4E4 !important}
+#rewards-new h3 { font-size:16px; font-weight:500;height:50px;line-height:30px;margin-bottom:0;}
+#rewards-new h4 { margin-bottom:0}
+#rewards-new h3 div,#rewards-new h4 div, #rewardRuleEA h3 div { font-size:16px; font-weight:500; }
+#rewards-new .allb{ margin:10px;margin-bottom: 5px;margin-top: 5px}
+#rewards-new .data{ padding:10px 10px 0}
+#rewards-new .data:hover{ background:#eee}
+#rewards-new .data.selected{ background:#539ff8}
+#rewards-new .boxno1 input[type="button"]{ display:inline-block;max-width:75px;margin:8px 0 0 10px;float:left}
+#rewards-new .boxno1 input[type="button"]:first-child { margin-left:0}
+#rewards-new .boxno1 input[type="button"]:focus { border-color:#ccc}
+#rewards-new .boxno1 input[type="button"]:hover { border-color:#6dbe45;background-color:#6dbe45;color:#fff}
+#rewards-new .allp10{padding:10px !important;padding-bottom: 5px !important;padding-top: 5px !important;overflow:hidden}
+#rewards-new .boxno1 .allp10 { padding-bottom: 10px !important;padding-top: 10px !important}
+#rewardRuleEA .x-icon.pointIcon{ margin:0}
+md-dialog-actions
+.lh30 { line-height:30px}
+.maxWidth70 { max-width:70px}
+.searchRewards .overflowscroll { overflow: hidden;overflow-y: scroll;max-height: 200px}
+.searchRewards .dataSR { padding:10px 10px 0 10px}
+.searchRewards .dataSR:hover { background:#eee}
+.searchRewards .dataSR.selected { background:#539ff8;color:#fff}
+.berry-up { font-weight:bold;border:1px #ccc dashed;margin:10px;color:#999999}
+
+#loyalty-grids { border:1px #ccc solid;border-top:0}
+#loyalty-grids input[type=text], #loyalty-grids input[type=number] { max-width:100px;float:left;font-size:14px;margin:8px 0 0 0}
+#loyalty-grids .data-row { padding:10px 10px 10px 10px;border-bottom:1px #ccc solid;overflow:visible;float:left;width:100%}
+#loyalty-grids .data-row:last-child { border-bottom:0 none}
+#loyalty-grids .data-row > div div { float:left;font-size:15px;padding:16px 10px 0 10px;color:#787878}
+#loyalty-grids .data-row img { float:left}
+#loyalty-grids .rhome { background-position: -288px -1160px;background-size: 930% auto}
+#loyalty-grids div.text-every { padding-left:20px;min-width:70px}
+#loyalty-grids div.text-on { min-width:170px}
+#loyalty-grids div.text-on .squaredFour.long { padding-top: 6px;padding-left: 0}
+#loyalty-grids div.text-on .squaredFour.long span.radio_text { padding-top:0}
+#loyalty-grids div.text-visits { min-width:110px;position:relative;min-height:50px}
+#loyalty-grids div.text-visits.width80 { min-width:65px}
+#loyalty-grids div.text-visits span { font-size:1em;color:#787878}
+/* #loyalty-grids div.text-visits > span { border-bottom:2px #ccc solid} */
+#loyalty-grids div.text-visits img { height:20px}
+#loyalty-grids .text-add { min-width:170px}
+#loyalty-grids .text-add.width70 { min-width:70px}
+#loyalty-grids .iconAD { overflow:hidden;padding:0;margin-left:0;margin-top:8px}
+#loyalty-grids .iconAD:hover { }
+#loyalty-grids div.text-visits ul.vsDropdown { display:none;position:absolute;width:100%;max-width:90px;background-color:#fff;border-radius: 5px;padding:5px 0;box-shadow: 0 3px 6px rgba(0,0,0,.175);border:1px #ccc solid;z-index:999;left:5px;top:40px}
+#loyalty-grids div.text-visits:hover ul.vsDropdown { display:block}
+/*#loyalty-grids div.text-visits ul.vsDropdown:before { width: 15px;height: 15px;background: #fff;border: 1px #ccc solid;transform: rotate(45deg);top:-8px;right: 25px;position: absolute;display: block;content: "" }
+#loyalty-grids div.text-visits ul.vsDropdown:after { width: 25px;height: 5px;background-color: #fff;display:block;content:"";position:absolute;top:0;right:20px}*/
+#loyalty-grids div.text-visits ul.vsDropdown li { position:relative;background-color:#fff;padding:5px;color:#000}
+#loyalty-grids div.text-visits ul.vsDropdown li:hover { background-color:#00a7e2;color:#fff}
+#loyalty-grids.x-spec{ padding:2px 10px;border-top:1px solid #ccc}
+#loyalty-grids.x-spec h3{ font-weight:400;padding:14px 0 0}
+#loyalty-grids.x-spec select{ min-width:100px;margin:5px}
+
+#loyalty-grids { display: table; width:100%; float:none; }
+#loyalty-grids > .clb { display: table-row; width:100%; float:none; }
+#loyalty-grids > .clb > div { display: table-cell; float:none; vertical-align:middle; }
+
+.subhead-lp { margin:0 -10px 10px -10px;position:relative;border-bottom:1px #ccc solid;padding:0 10px 10px 10px }
+.subhead-lp h2 { padding-bottom:5px}
+
+.btn.btnavs { padding-top:4px;padding-bottom:3px;max-height: 36px}
+.btn.btnavs:hover { background-color:#00a7e2;color:#fff}
+
+#rewards-new .boxno2 .x-icon.view,
+#rewards-new .boxno2 .x-icon.delete,
+#rewards-new .boxno2 .x-icon.edit { margin:9px 0 0 0;float:left}
+#rewards-new .boxno2 .ui-grid { border:0 none;height:auto !important}
+#rewards-new .boxno2 h3 .minwidth100 input[type='button'] { padding-top:0;padding-bottom:0;height:32px;line-height:30px}
+
+.md-dialog-container .modal-header { min-height:30px}
+
+.loyaltyDbFilters input.dateField {max-width:90px;margin-left:5px;margin-bottom:0}
+.filter-submit-btn .btn-success{color:#fff;background-color:#6bc11f;line-height:30px;border:0;margin-bottom:0;min-width:100%;max-width:100%;padding:0 15px!important;margin-left:0 !important}
+.filter-submit-btn .btn-success span{color:#fff !important;background-color:#6bc11f;position:relative;width:13px;display:inline-block}
+.filter-submit-btn .btn-success span:after{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=100);opacity:1;content:'';position:absolute;width:12px;height:7px;background:0 0;top:-9px;left:0;border:2px solid #fff;border-top:none;border-right:none;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}
+.filter-submit-btn .btn-success:hover,.filter-submit-btn .btn-success:hover span {background-color:#4bb649!important;color:#fff!important; border:0 !important}
+.filter-submit-btn .btn-success:hover *{color:#fff !important}
+.filter-submit-btn .btn-success:hover span:after{border-color:#fff}
+ul.filter_option.large li.filter-month-qtr{max-width:420px;border:0;padding:11px 0 0 5px}
+ul.filter_option.large li.filter-month-qtr.max-width200 { max-width:200px; }
+.row-graph-filter>.npr,ul.filter_option.large li.filter-month-qtr .npr{padding-left:5px}
+ul.filter_option.large li.filter-month-qtr:hover:before{border:0}
+ul.filter_option.large li.filter-month-qtr.filterL3{max-width:300px}
+ul.filter_option.large li.filter-month-qtr.filterL3 .col-lg-4{width:50%}
+ul.filter_option.large li.filter-month-qtr select{min-width:100%}
+ul.filter_option li .x-icon.filter{margin-top:2px}
+ul.filter_option li{ padding:0}
+#loyaltyDBContainer .customerBaseCockpit { text-align:center;padding:10px;position:relative}
+#loyaltyDBContainer .customerBaseCockpit canvas { margin-top:30px}
+#loyaltyDBContainer .customerBaseCockpit .relx { position:absolute;left:0;right:0;top:35px;width:50px;height:50px;margin:0 auto}
+#loyaltyDBContainer .customerBaseCockpit .relx img { max-width:50px;height:auto}
+#loyaltyDBContainer .customerBaseCockpit strong { font-weight: bold;font-size: 26px;color: #444;display:block;padding-top:5px}
+
+#memberTransToTotalWidget { position:relative;margin:5%;float:none;padding-top:10px}
+#memberRevenueToTotalWidget{ position:relative;margin:5%;float:none;padding-top:10px}
+.mtp,
+.mtpData { position:absolute;top:195px;z-index:99999;font-weight:normal}
+.mtp.low { left:10px;color:#ff000}
+.mtp.high { right:10px;color:#ff000}
+.mtpData { left:0;right:0;text-align:center;top:210px}
+.mtpData label { font-size:26px;color:#444;font-weight: bold;padding:0 0 0 20px}
+
+#memberTransToTotalWidget svg path { stroke-width: 5px !important}
+#memberRevenueToTotalWidget svg path { stroke-width: 5px !important}
+#programRevenuePercentWidget svg path { stroke-width: 5px !important}
+#redemptionRateWidget svg path { stroke-width: 5px !important}
+
+.dayToFirst {margin:0 auto;left:0;right:0;position:absolute;padding:0;top:50%;transform:translateY(-50%);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);z-index:99;text-align: center;font-size: 60px;color: #028BBD}
+
+.salesTable, .pSummaryTable {height: 186px !important}
+.tablex{overflow-y: hidden !important;}
+
+.visitFrequencyDetails {
+    position:absolute;
+    z-index: 99999;
+    text-align: center;
+}
+
+.templateContent {
+    width: 100%;
+    height: 100%;
+}
+.salesScreen-height {
+    margin-top: 5px;
+}
+.rewardScreen-height, .rewardsEarned {
+    margin-top: 10px;
+}
+
+.statusInfo {
+    padding-top: 25px !important;
+}
+
+.rewardConAndEarn{
+    padding-bottom: 10px !important;
+    height: auto !important;
+}
+
+@media (max-width:1440px){
+     .salesTable, .pSummaryTable {height: 238px !important;}
+}
+@media (min-width:1250px) and (max-width:1370px) {
+     .rewards-converted-earned-outer .screen-height {height: 180px !important; overflow-y:scroll;}
+     .exportButton {padding-top: 15px !important;}
+}
+
+@media screen and (min-width: 1280px) {
+    .salesScreen-height {
+        height: 155px !important;
+    }
+    .salesMed, .purchTable {
+        height: 145px !important;
+        overflow-y: auto !important;
+    }
+    .visitFrequencyDetails {
+        right: 70px;
+        left: 37px;
+        bottom: 15px;
+    }
+    .statusInfo {
+        padding-top: 15px !important;
+    }
+    .rewardScreen-height {
+        height: 335px !important;
+    }
+    .rewardsConvertedDet, .rewardsEarnedDet {
+        height: 145px !important;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .salesScreen-height {
+        height: 170px !important;
+        margin-top: 0px !important;
+    }
+    .salesMed, .purchTable {
+        height: 155px !important;
+        overflow-y: auto !important;
+    }
+    .salesMed tr, .purchTable tr {
+        height: 35px;
+    }
+    .visitFrequencyDetails {
+        right: 50px;
+        left: 30px;
+        bottom: 50px;
+    }
+    .statusInfo {
+        padding-top: 20px !important;
+    }
+    .rewardScreen-height {
+        height: 360px !important;
+    }
+    .rewardsConvertedDet, .rewardsEarnedDet {
+        height: 155px !important;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .salesScreen-height {
+        height: 180px !important;
+    }
+    .salesMed, .purchTable {
+        height: 170px !important;
+        overflow-y: auto !important;
+    }
+    .salesMed tr, .purchTable tr {
+        height: 40px;
+    }
+    .visitFrequencyDetails {
+        right: 50px;
+        left: 54px;
+        bottom: 60px;
+    }
+    .statusInfo {
+        padding-top: 30px !important;
+    }
+    .rewardScreen-height {
+        height: 410px !important;
+    }
+    .rewardsConvertedDet, .rewardsEarnedDet {
+        height: 168px !important;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .salesScreen-height {
+        height: 200px !important;
+    }
+    .salesMed, .purchTable {
+        height: 180px !important;
+        overflow-y: auto !important;
+    }
+    .visitFrequencyDetails {
+        left: 73px;
+        bottom: 25px;
+    }
+    .statusInfo {
+        padding-top: 35px !important;
+    }
+    .rewardScreen-height {
+        height: 425px !important;
+    }
+    .rewardsConvertedDet, .rewardsEarnedDet {
+        height: 180px !important;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .salesScreen-height {
+        height: 250px !important;
+    }
+    .salesMed, .purchTable {
+        height: 235px !important;
+        overflow-y: auto !important;
+    }
+    .salesMed tr, .purchTable tr {
+        height: 47px;
+    }
+    .visitFrequencyDetails {
+        right: 140px;
+        bottom: 70px;
+    }
+    .statusInfo {
+        padding-top: 65px !important;
+    }
+    .rewardScreen-height {
+        height: 560px !important;
+    }
+    .rewardsConvertedDet, .rewardsEarnedDet {
+        height: 245px !important;
+    }
+}
+ 
+@media all and (max-width:1250px) {
+     .cockpit .relx img { margin-top:15px}
+     #loyaltyDBContainer .customerBaseCockpit canvas { margin-top:5px}
+     #memberTransToTotalWidget, #memberRevenueToTotalWidget, #programRevenuePercentWidget, #redemptionRateWidget { padding-top:10px;padding-left:15px}
+     .mtp { top: 170px}
+     .mtpData { top: 190px}
+    
+     #rewards-new .boxno1 .minwidth200 { min-width: 170px}
+}
+
+#selectReward .selected div { color:#fff}
+.modal-header{ margin-bottom:0;border-bottom:1px solid #ccc}
+#rewards-new .boxno1 .overflowscroll { overflow:hidden;height:77vh;overflow-y:scroll}
+.everyWelcome + .col-lg-3 { min-width:40%;padding-top:15px !important}
+#rewardRuleEA{ max-height:400px;overflow:hidden;overflow-y:auto}
+#rewardRuleEA h4{ font-size:12px; font-weight:500}
+#rewardRuleEA .rules input[type=text], #rewardRuleEA .rules input[type=number]{min-width:100px; max-width:100px; float:none; clear:none; margin-left:10px}
+#rewardRuleEA .rules .helperContainer input[type=text] { max-width:none; } 
+#rewardRuleEA .multiSelect > button { width:100%; }
+#rewardRuleEA .conditions label{ max-width:auto; display:inline-block}
+#rewardRuleEA .boxDisabled {opacity: .5}
+#rewards-new .boxno2 .ui-grid-row, 
+#rewards-new .boxno2 .ui-grid-cell, 
+#rewards-new .boxno2 .ui-grid-cell .ui-grid-vertical-bar { height:auto}
+#rewards-new .boxno2 .ui-grid-row:nth-child(odd),
+#rewards-new .boxno2 .ui-grid-row:nth-child(even) { overflow:hidden}
+#rewards-new .boxno2 .ui-grid-row:nth-child(odd) { background-color: #fdfdfd}
+#rewards-new .boxno2 .ui-grid-row:nth-child(even) { background-color: #f3f3f3}
+#rewards-new .boxno2 .ui-grid-row .col-lg-11 { white-space:normal}
+
+#rewards-new .boxno2 .ui-grid-viewport { height: 280px}
+#rewards-new .boxno3 .overflowscroll,.imgSection .overflowscroll{overflow:auto;height:346px}
+.popscrollCampaignPreview .imgSection .overflowscroll { height:300px; overflow: auto;}
+.popscrollCampaignPreview  #rewardRuleEA { overflow: hidden; }
+#rewards-new .boxno3 img { max-width:100%;height:auto}
+
+
+#selectReward .overflowscroll > .clearfix:nth-child(odd) { background-color: #fdfdfd}
+#selectReward .overflowscroll > .clearfix:nth-child(even) { background-color: #f3f3f3}
+
+.imgSection img { max-width:100% !important;height:auto !important}
+#selectReward .selected { background-color:#00a7e2 !important;color:#fff}
+
+.x-icon.loyaltyDelete, .x-icon.loyaltyAdd { cursor:pointer}
+
+.emailPrePop table { /*width:100% !important;max-width:100% !important;*/ }
+
+.coupon-notification-btns .btn { float:left;max-width:none;width:auto;min-width:20%;margin:0;padding-top:18px;padding-bottom:14px;max-height:none;height:auto;border-radius:0;border-top:0;border-bottom:0;border-left:0}
+.coupon-notification-btns .btn:hover { border-color:#ddd;background:#00a7e2;color:#fff}
+.ui-grid-contents-wrapper{ max-height:280px}
+.FlipContainer_panel { max-width:100% !important}
+.FlipContainer_panel .card { transform:scale(.80);top:20px;left:0}
+md-dialog-content{ overflow:hidden;overflow-y:scroll;height:400px}
+#rewards-new .ui-grid-canvas,#list_reward_rule .ui-grid-canvas{ height:280px !important;overflow:hidden;overflow-y:scroll;width:100%}
+#list_reward_rule .ui-grid-canvas > div > div > div { float:left}
+#list_reward_rule .ui-grid-canvas > div > div > div + div { min-width:72px;max-width:72px}
+
+#divMobileAdPreview .email_fullWidth_block,
+#divMobileAdPreviewPopup .email_fullWidth_block { /*transform: scale(.83);margin: -60px 0 0 -50px;position: relative;*/ width:100% !important;max-width:100% !important}
+#divMobileAdPreview .email_fullWidth_block #email_editor_new,
+#divMobileAdPreviewPopup .email_fullWidth_block #email_editor_new { width:100% !important;max-width:100% !important}
+#divMobileAdPreviewPopup .email_fullWidth_block #email_editor_new img { min-height:83px}
+.emailPrePop.rewardRule table,
+.emailPrePop.rewardRule img { max-width:250px !important} 
+#loyaltyDBContainer .growth-diagram{ clear:none;margin-bottom:0}
+#loyaltyDBContainer .growth-diagram.plus .bgbox,#loyaltyDBContainer .growth-diagram.plus .line-graph .dark{ background:#70c0b3}
+/*#frequency .checkbox input + span,#frequency .radio input + span{ padding:5px 0 0 10px}*/
+#frequency  ul.tabs{ margin:10px 0;overflow:hidden;width:100%}
+#frequency ul.tabs li{ float:left;display:inline-block;border:1px solid #ddd}
+#frequency  ul.tabs li:nth-child(2){ border-left:0;border-right:0}
+#frequency  ul.tabs li a,#frequency  ul.tabs li a:hover{ display:block;padding:10px;color:inherit;/*text-align:center;background:url(../imgs/addplus.png) no-repeat 10px 10px;background-size:12% auto*/min-width:180px;}
+#frequency  ul.tabs li a.selected{/*color:#fff;background:#00a7e2 url(../imgs/editplus.png) no-repeat 10px 10px;background-size:12% auto*/}
+#frequency  ul.tabs li .allb:hover { border-color:#0c85fe; }
+#frequency  strong{ /*font-size:14px;color:#666;font-weight:500*/}
+#frequency .plus{ border:1px solid #ccc;border-radius:3px;padding:3px 8px ;margin-left:5px;display:inline-block;text-align:center;cursor:pointer;font-size:18px}
+#frequency .plus:hover { border-color: #4F9DFB; }
+#frequency .padder.lessnom{ margin:5px}
+#frequency .box1 .padder{ min-height:410px}
+#frequency .box2 .padder{ min-height:225px}
+#SelectedFilterLLoyaltyContainer label:before{ display:inline-block;padding-right:15px;content:','}
+#SelectedFilterLoyaltyContainer label:first-child:before{content:'Selected Filters: ';padding:0 10px 0 0;font-weight:400}
+
+.filters-net-sales label{padding-right:10px;padding-top:11px;padding-bottom:7px}
+.filters-net-sales label span{color:#00a7e2}
+.filters-net-sales .ns-selected-filters{padding:0;overflow:hidden;border:0;position:relative;transition:all 0.3s}
+.filters-net-sales .ns-selected-filters.max-height30{max-height:30px;overflow:hidden;transition:all 0.3s}
+.filters-net-sales .ns-selected-filters.max-height30.filtersLoyalty { max-height:none}
+.filters-net-sales .ns-selected-filters.br0{border:0 none}
+.filters-net-sales .ns-selected-filters label{overflow:hidden;float:left;width:auto;/*max-width:180px;*/ padding-top:0;padding-bottom:0;line-height:20px}
+.filters-net-sales .ns-selected-filters #filters-toggle{position:absolute;right:10px;top:5px;display:none}
+.filters-net-sales .ns-selected-filters #filters-toggle span{cursor:pointer;color:#00a7e2;font-size:15px}
+.filters-net-sales .ns-selected-filters #filters-toggle span.hide{display:none}
+
+#points div{text-align:center} 
+#points label{ padding:10px 10px 5px;color:#fff;font-size:24px;margin:5px 0 0;display:block;background:#42a4bb;position:relative}
+#points div label:last-child,#points .dark{ background:#77d5c7}
+#points div label img{ position:absolute;right:10px;top:10px;max-width:20px}
+
+#programRevenuePercentWidget .b-gauge__paths,#redemptionRateController .b-gauge__paths{ min-width:200px;min-height:150px}
+
+.cockpit restaurantdata-indicator .restaurantIndicatorClass,.cockpit brestaurantdata-indicator .restaurantIndicatorClass{ background:#eee;padding:10px}
+.cockpit restaurantdata-indicator:nth-of-type(odd) .restaurantIndicatorClass,.cockpit brestaurantdata-indicator:nth-of-type(odd) .restaurantIndicatorClass{ background:#fff}
+.cockpit .negative .tar{ color:#ff8787}
+.cockpit .positive .tar{ color:#42a4bb} 
+.cockpit .iconabs{ position:absolute;top:5px;right:30px;display:none}   
+.cockpit .gridster-item:hover  .iconabs{ display:block}
+.x-icon.forwardcustomerCount-grey{/*background:url("../imgs/sprite.png") no-repeat -193px -1433px / 450px auto;*/display: block;height: 24px;margin:7px 0 0;padding: 0;width: 24px}
+
+#pivottable table{border:0}
+#pivottable table.pvtTable tr th{background:#f7f7f7;font-weight:500}
+#pivottable table tr th{border:1px solid #ddd;padding:5px}
+#pivottable table .pvtColLabel{text-align:center;font-weight: bold;min-width: 120px;font-size: 11px}
+#pivottable table .pvtTotalLabel{text-align:center}
+#pivottable table tr td{color:#333;padding:5px;background-color:#FFF;border:1px dashed #ccc;vertical-align:top}
+#pivottable table td:first-child{width:160px;overflow:hidden;table-layout:fixed;border:0}
+#pivottable table tr td.pvtRendererArea{border:0}
+#pivottable table tr td.pvtHorizList{border:1px dashed #ccc !important}
+#pivottable table tbody tr:first-child td{border:0}
+#pivottable .pvtGrandTotal,.pvtTotal{font-weight:700}
+#pivottable .pvtVals{text-align:center;width: 150px}
+#pivottable .pvtAggregator{margin-bottom:5px}
+#pivottable .pvtAxisContainer,.pvtVals{border:1px dashed #ccc;background:#fff;padding:5px;min-width:20px;min-height:20px}
+#pivottable .pvtAxisContainer li{padding:8px 6px;list-style-type:none;cursor:move}
+#pivottable .pvtAxisContainer li.pvtPlaceholder{-webkit-border-radius:5px;padding:3px 15px;-moz-border-radius:5px;border-radius:5px;border:1px dashed #999}
+#pivottable .pvtAxisContainer li span.pvtAttr{border:0;padding:6px 25px 8px 5px;white-space:nowrap;border-radius:0;background:#eee;background:-moz-linear-gradient(top, #eee 0%,#ffffff 25%,#ffffff 75%,#eee 100%);background:-webkit-linear-gradient(top, #eee 0%,#ffffff 25%,#ffffff 75%,#eee 100%);background:linear-gradient(to bottom, #eee 0%,#ffffff 25%,#ffffff 75%,#eee 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#eee',endColorstr='#eee',GradientType=0 );font-size:12px;position:relative;min-width:80px}
+#pivottable .pvtAxisContainer.pvtVertList li span.pvtAttr,#pivottable .pvtAxisContainer.pvtRows li span.pvtAttr{width:100%;display:block}
+#pivottable .pvtTriangle{cursor:pointer;color:#333;position:absolute;right:5px;top:5px}
+#pivottable .pvtHorizList li{display:inline}
+#pivottable .pvtVertList{vertical-align:top;background:#fff5e0;border:no}
+#pivottable .pvtFilteredAttribute{font-style:italic}
+#pivottable .pvtFilterBox{z-index:100;width:280px;border:1px solid #ccc;background-color:#fff;position:absolute;padding:10px;text-align:left}
+#pivottable .pvtFilterBox h4{margin:0 0 10px;border-bottom:1px solid #ddd;padding-bottom:5px}
+#pivottable .pvtFilterBox button{border:1px solid #ccc;border-radius:0;padding:5px 10px;text-align:center;margin:0 0 0 10px;float:right}
+#pivottable .pvtFilterBox .pvtSearch{border:1px solid #ccc;width:100%;padding:5px;margin:10px 0}
+#pivottable .pvtFilterBox label{padding:5px 0}
+#pivottable .pvtFilterBox input[type="radio"],#pivottable .pvtFilterBox input[type="checkbox"]{margin:0 10px 0 0;border:1px solid #ccc;visibility:visible !important}
+#pivottable .pvtCheckContainer{text-align:left;overflow:scroll;width:100%;max-height:200px}
+#pivottable .pvtCheckContainer p{margin:10px 0}
+#pivottable td.pvtRendererArea table.pvtTable th{border-color:#ccc;font-weight: bold}
+#pivottable td.pvtRendererArea table.pvtTable td{border-color:#ccc;text-align:right}
+#pivottable .radio input[type="radio"],#pivottable .radio-inline input[type="radio"],#pivottable .checkbox input[type="checkbox"],#pivottable .checkbox-inline input[type="checkbox"]{margin:10px 0 0 10px !important}
+#pivottable .checkbox input + span::before,#pivottable .radio input + span::before,#pivottable .checkbox1 input + span::before,#pivottable .radio input1 + span::before{/*background:url("../imgs/sprite.png") no-repeat scroll 0 -287px !important;background-size:2300% auto !important;*/content:" " !important;display:block !important;height:36px !important;left:0 !important;padding-right:15px !important;position:absolute !important;top:6px !important;vertical-align:top !important;width:40px !important}
+#pivottable .radio input:checked + span::before{background-position:-89px -287px !important}
+#pivottable table table.pvtTable tr td{border:1px solid #ccc}
+#pivottable label input[type="radio"],#pivottable label input[type="checkbox"]{display:block}
+#pivottable .pvtAggregator {margin-bottom: 5px;Display: none}
+#pivottable .pvtColLabel span.arrowRotate {display: inline-block;transform:rotate(180deg);margin-top: -1px;position: absolute}
+#pivottable .pvtColLabel div.arrowRotate {display: inline-block;position: relative}
+.loyaltyppt span.radio_text1,.loyaltyppt span.radio_text{ padding-left:30px !important}
+#rewards-new .boxno2 .ui-grid-cell{max-width:80% !important}
+#rewards-new .boxno2 .ui-grid-canvas .ui-grid-row .ui-grid-cell:last-child{min-width:70px !important}
+#list_reward_rule .ui-grid-render-container .ui-grid-viewport { overflow-y: visible !important}
+.loyaltyppt .ptb10{padding-top:10px;padding-bottom:10px}
+.loyaltyppt .minh70{ min-height:70px}
+.loyaltyppt .clb{ overflow:hidden}
+.loyaltyppt span,.loyaltyppt .em{ display:block}
+.loyaltyppt span.red,.loyaltyppt span.green,.loyaltyppt span.grey{ width:15px;height:15px;border-radius:15px;margin:0 auto;margin-bottom:5px}
+.loyaltyppt span.red{ background:#ee0000}
+.loyaltyppt span.green{ background:#50b44f}
+.loyaltyppt span.grey{ background:#aaa}
+.loyalty-cockpit .padder.loyaltyDbFilters{ position:relative;min-height:55px}
+.emailCamaignName { border:0}
+.emailCamaignName span { display:block;border:1px #ccc dashed !important;margin-left:10px;padding:16px 10px; word-wrap: break-word;}
+
+#programRevenuePercentWidget,
+#redemptionRateWidget { margin-left:auto;margin-right:auto;padding-top:10px;padding-left:0}
+
+.multiSelect .checkboxLayer { min-width:300px}
+.multiSelect .helperButton { min-width:50px;background:#fff}
+
+.maxWidth70 { max-width:70px}
+
+ul.tablex { overflow: hidden;
+    overflow-y: scroll;
+    position: relative;
+    display: block;
+    list-style: none;
+    height: 180px;
+    padding: 0 0 0 10px !important;
+    margin: 0}
+ul.tablex  table { max-width: 99%;margin:10px 0 0}
+.cockpit .table-resp th[align="left"] { text-align: left}
+
+.multiSelect .disabled,.multiSelect .disabled:hover,.multiSelect .disabled label input:hover ~ span{color:black!important;cursor:not-allowed!important;display: block;
+    word-break: break-all;
+    white-space: normal;}
+.multiSelect .multiSelectItem .acol label{display: block;}
+.multiSelect .acol{display: block;}
+.multiSelect .buttonLabel {
+   max-width: 90%;
+}
+.form-inline.loyalty .form-group.multi-width{width: auto}
+.form-inline.loyalty .form-group.multi-width .ms-w80p .multiSelect-button { /*width:78%;*/}
+.form-inline.loyalty .form-group.multi-width .multiSelect-button-w100 { /*width:100%;*/  }
+.form-inline.loyalty .form-group.multi-width .multiSelect-button-w100 i{margin-left:10px }
+.form-inline.loyalty .form-group.multi-width .multiSelect-button-w100 .multiSelect > button{padding-right: 26px;}
+
+md-dialog.posFixed,
+.md-dialog-container { position:fixed; }
+#selectReward .ui-grid .col-lg-11.col-md-11 div { max-width:98%; text-overflow: ellipsis; overflow:hidden; }
+#rewardRuleEA .clearfix.overflowscroll > div > div { word-wrap: break-word; }
+
+.tabs-left { cursor:pointer; }
+.tab-active { background:#00a7e2; color:#fff; border-bottom: 0; }
+.tabs-left .fa.fa-angle-right { display:none; }
+.tab-active .fa.fa-angle-right { display:block; float:right; color: #fff; padding:4px; }
+.tabs-points-rules { float:left; border-right:1px solid #ddd; padding:10px 50px; cursor:pointer; }
+.tabs-left > div { line-height: 2; }
+
+.icon-points-expiration-preview { font-size:1.5em; padding:6px 7px 5px 7px; cursor: pointer; }
+.icon-points-expiration-preview:hover,
+.icon-points-expiration-preview.active { background-color: #4F9DFB; border-color: #4F9DFB; color:#fff; }
+.icon-points-expiration-delete { padding:9px 5px 10px 5px; border-color:#fff !important; cursor: pointer;  }
+
+input.inputW50 { max-width: 50px; }
+select.selectW100 { max-width: 100px; }
+
+.panel-lyl-config { border-radius: 0; border-top:0; border-left: 0; border-right: 0; margin-bottom: 0; }
+.squaredFour input[type="checkbox"][disabled="disabled"] + label { cursor:default; }
+.squaredFour input[type="checkbox"][disabled="disabled"] + label:after { border-color:#ccc; }
+.cell-selected-items .ui-grid-cell { min-width:100% !important; max-width:100% !important; }
+.cell-selected-items .ui-grid-render-container-body .ui-grid-canvas { width:100% !important; }
+md-dialog.md-choose-pos-categories { max-width: 80%; }
+.order-mode .multiSelect > button { min-width: 200px; }
+ul.filter_icon.filter_icon_loyalty_configuration li { padding:3px; }
+ul.filter_icon.filter_icon_loyalty_configuration li.long .x-tooltip { min-width: 400px; left: -190px; top:36px; bottom: inherit; }
+ul.filter_icon.filter_icon_loyalty_configuration li:first-child .x-tooltip:before { left: 198px; }
+.grid-list-items-transaction i.ui-grid-icon-plus-squared:before,
+.grid-list-items-transaction i.ui-grid-icon-minus-squared:before{ margin-top:10px; }
+.grid-list-items-transaction .ui-grid-viewport { }
+
+#rewardsPoints .form-control { height:auto; }
+#rewardsPoints #dy_timer_control.form-control { height:32px; }
+#rewardsPoints label.minWidth120 { min-width:150px; }
+#rewardsPoints i.fa.fa-pencil { font-size: 15px; }
+#rewardsPoints i.fa.fa-pencil { border-bottom: 1px #000 solid; display:inline-block; }
+.grid-list-items-transaction .ui-grid-tree-base-row-header-buttons { text-align: center;}
+.btn-fixed button.bgblue { background: #fff !important; border-color: #ccc !important; color:#000 !important; }
+.btn-fixed button.bgblue .fa-angle-right:before,
+.btn-fixed button.bgblue .fa-angle-left:before { color:#000 !important; }
+.btn-fixed button.bgblue:hover { background: #0c85fe !important; border-color: #0c85fe !important; color:#fff !important; }
+.btn-fixed button.bgblue:hover .fa-angle-right:before,
+.btn-fixed button.bgblue:hover .fa-angle-left:before{ color:#fff !important; }
+
+.lyl-custom-width-01 { width:calc(50% - 25px); }
+.lyl-custom-width-02,
+.lyl-custom-width-02 .btn-fixed { width:50px; }
+
+#reward-conversion-scheme .ui-grid-row:last-child .ui-grid-cell { border-bottom-width:1px; }
+md-dialog.md-choose-pos-categories { max-width: 80%; }
+
+.multiSelect .checkBoxContainer { padding-top:0; }
+.multiSelect .checkboxLayer .checkBoxContainer > .multiSelectItem { top: 0; transform: translate(0); white-space: normal; }
+
+.enable-default-order-mode .selectize-input.disabled,
+.enable-default-order-mode .selectize-control.single .selectize-input.disabled:after { background-color: #eee !important; cursor: no-drop !important; }
+.enable-default-order-mode .selectize-input.disabled * { cursor: no-drop !important; }
+.order-mode .acol > label > span span:first-child { float:left; width:30%; } 
+.order-mode .acol > label > span span:last-child { float:left; width:70%; }
+.multiSelect .multiSelectItem .acol label{ overflow:hidden; }
+input.mwidth100 {
+    max-width: 100px;
+}
+.pbcustomer {
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+button.btn:focus { color:#fff !important; }
+ul.filter_icon li.long img.load ~ .x-tooltip { left: -42px; }
+
+.squaredFour.cb-pos-categories { top: 9px; }
+
+.ui-grid.grid-list-custom .ui-grid-render-container-body .ui-grid-canvas { width:100%; }
+.ui-grid.grid-list-custom .ui-grid-row .ui-grid-cell { width:100%; max-width: 100%; }
+.ui-grid.grid-list-custom .ui-grid-viewport { overflow-x: hidden !important; }
+.ui-grid.grid-list-custom .ui-grid-scrollbar-placeholder { height: 0px !important; }
+.ui-grid.grid-list-custom .ui-grid-render-container-left .ui-grid-viewport { height: 355px; }
+.rewardsConvertedDet, .rewardsEarnedDet { overflow-y: auto !important; }
+.table-body-scroll { max-width: 99%; max-height: 136px; overflow-x: hidden; overflow-y: auto; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; }
+.table-body-scroll table { max-width: 100% !important; margin: 0 !important; border-top:0; border-right: 0; }
+.table-body-scroll table tbody tr:first-child { border-top: 0; }
+.table-body-scroll table tbody tr { border-right: 0; }
+select.purchaseActivitySummaryController { position: absolute; top: 4px; right: 40px; max-width: 150px; }
+
+#loyaltyProductSelectedgrid .ui-grid-cell .sfl.pt10.pl10 { white-space: nowrap !important; overflow: hidden; text-overflow: ellipsis; }

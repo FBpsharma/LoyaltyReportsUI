@@ -1,0 +1,20 @@
+{
+  "/LYLReports/*": {
+    "target": "https://az-qa-jamba.fishbowlcloud.com:444",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/api/*": {
+    "target": "https://az-qa-jamba.fishbowlcloud.com:444",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/clpapi/*": {
+    "target": "https://az-qa-jamba.fishbowlcloud.com:444",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
