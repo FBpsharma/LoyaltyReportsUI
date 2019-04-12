@@ -6,7 +6,7 @@ import { Observable, of } from 'rxjs';
 @Component({
   selector: 'sales-transaction-summary',
   templateUrl: './sales-transaction-summary.component.html',
-  styleUrls: ['./sales-transaction-summary.component.css']
+  styleUrls: ['./sales-transaction-summary.component.scss']
 })
 export class SalesTransactionSummaryComponent implements OnInit {
     salesSummaryData: Array<any>;

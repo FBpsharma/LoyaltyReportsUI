@@ -7,7 +7,7 @@ import { Observable, of } from 'rxjs';
 @Component({
   selector: 'membership-growth',
   templateUrl: './membership-growth.component.html',
-  styleUrls: ['./membership-growth.component.css']
+  styleUrls: ['./membership-growth.component.scss']
 })
 export class MembershipGrowthComponent implements OnInit {
   dataStatusInfo: string = 'Loading data...';
@@ -22,12 +22,13 @@ export class MembershipGrowthComponent implements OnInit {
   bars: any;
   dataSource: Object;
   chartConfig: Object;
-  data: any = [];
+  // data: any = [];
   times: any = [];
   chartCategory: any = [];
   objMemberCount: any = [];
   objNewMembers: any = [];
-  maxY: number;
+  maxY1: number;
+  maxY2: number;
 
   monthAliasMapping: any = {
       "Jan": "1",
@@ -63,6 +64,11 @@ export class MembershipGrowthComponent implements OnInit {
   drawLineChart(chartData: any) {
     for (var i = 0; i < chartData.length; i++) {
       var obj = {};
+      var convertedTotalMember: any;
+      var convertedNewTotalMember: any;
+      var convertedDelta: any;
+      var convertedNewDelta: any;
+
       if (chartData[i].hasOwnProperty("Month")) {
         var notMonth = this.monthAliasMapping[chartData[i].Month];
         if ("undefined" != notMonth) {
@@ -75,24 +81,43 @@ export class MembershipGrowthComponent implements OnInit {
       } else {
           obj["Month"] = chartData[i].Year;
       }
-      obj["Member Count (1,000)"] = [chartData[i].TotalMember, chartData[i].Delta, chartData[i].Status];
-      obj["New Members (1,000)"] = [chartData[i].newTotalMember, chartData[i].newDelta, chartData[i].Status];
-      this.data.push(obj);
+      //Not required: check later
+      // obj["Member Count (1,000)"] = [chartData[i].TotalMember, chartData[i].Delta, chartData[i].Status];
+      // obj["New Members (1,000)"] = [chartData[i].newTotalMember, chartData[i].newDelta, chartData[i].Status];
+      // this.data.push(obj);
       this.times.push(obj["Month"]);
       this.chartCategory.push({"label": obj["Month"]});
-      this.objMemberCount.push({"value": chartData[i].TotalMember});
-      this.objNewMembers.push({"value": chartData[i].newTotalMember});
+      
+      convertedTotalMember = "\xa0\xa0" + this.abbreviateNumber(chartData[i].TotalMember);
+      convertedNewTotalMember = "\xa0\xa0" + this.abbreviateNumber(chartData[i].newTotalMember);
+
+      //dont show delta in tooltip for current period
+      if (!!chartData[i].Status) {
+        this.objMemberCount.push({"value": chartData[i].TotalMember, "color": "#74A0D7", "tooltext": convertedTotalMember+ ", Period: " + chartData[i].Status});
+        this.objNewMembers.push({"value": chartData[i].newTotalMember, "color": "#8BD2C6","tooltext": convertedNewTotalMember + ", Period: " + chartData[i].Status});
+      } else {
+        convertedDelta = this.convertDelta(chartData[i].Delta);
+        convertedNewDelta = this.convertDelta(chartData[i].newDelta);
+        this.objMemberCount.push({"value": chartData[i].TotalMember, "color": "#74A0D7", "tooltext": convertedTotalMember + "," + convertedDelta});
+        this.objNewMembers.push({"value": chartData[i].newTotalMember, "color": "#8BD2C6", "tooltext": convertedNewTotalMember + "," + convertedNewDelta});
+      }
     }
 
-    this.maxY = Math.max.apply(Math, this.objMemberCount.map(function(o) {
+    this.maxY1 = Math.max.apply(Math, this.objMemberCount.map(function(o: any) {
         return Number(o.value);
     }));
-    this.maxY = this.maxY * 1.5;
-    console.log(this.maxY);
+    this.maxY1 = Math.ceil(this.maxY1 * 1.5);
+    console.log(this.maxY1);
+
+    this.maxY2 = Math.max.apply(Math, this.objNewMembers.map(function(o: any) {
+      return Number(o.value);
+    }));
+    this.maxY2 = Math.ceil(this.maxY2 * 1.5);
+    console.log(this.maxY2);
 
     this.chartConfig = {
       width: '700',
-      height: '200',
+      height: '220',
       type: 'mscombidy2d',
       dataFormat: 'json',
     };
@@ -100,12 +125,15 @@ export class MembershipGrowthComponent implements OnInit {
     this.dataSource = {
         "chart": {
           // "xAxisname": obj["Month"],
-          "pYAxisName": "Member Count (1,000)",
-          "sYAxisName": "New Members (1,000)",
+          "yAxisName": "Member Count (1,000)",
+          "syAxisName": "New Members (1,000)",
+          "yAxisNameFontColor": "#74A0D7",
+          "syAxisNameFontColor": "#8BD2C6",
+          "baseFontSize": "10",
           // "numberPrefix": "$",
-          "pYNumDivLines": "5",
-          "sYNumDivLines": "4",
-          "pYAxisMaxValue": this.maxY,
+          "pyNumDivLines": "5",
+          "syNumDivLines": "4",
+          // "pYAxisMaxValue": this.maxY1,
           // "divlineColor": "#999999",
           // "divLineIsDashed": "1",
           // "divLineDashLen": "1",
@@ -117,6 +145,7 @@ export class MembershipGrowthComponent implements OnInit {
           // "toolTipBorderRadius": "2",
           // "toolTipPadding": "5",
           "theme": "fusion"
+          // "plottooltext": "New Tooltip text: $tooltext"
         },
         "categories": [{
           "category": this.chartCategory
@@ -124,16 +153,38 @@ export class MembershipGrowthComponent implements OnInit {
         "dataset": [{
           "seriesName": "Member Count",
           "renderAs": "line",
+          "maxvalue": this.maxY1,
           "color": "#74A0D7",
+          // "showvalues": "0",
           "data": this.objMemberCount
         },
         {
             "seriesName": "New Members",
-            // "showValues": "1",
+            "parentyaxis": "S",
+            "renderAs": "bar",
+            "maxvalue": this.maxY2,
             "color": "#8BD2C6",
             "data": this.objNewMembers
-          }
-        ]
+        }]
+        // "styles": {
+        //   "definition": [
+        //     {
+        //       "name": "leftYAxisFont",
+        //       "type": "font",
+        //       "color": "#74A0D7"
+        //     },
+        //     {
+        //       "name": "rightYAxisFont",
+        //       "type": "font",
+        //       "color": "#8BD2C6"
+        //     }],
+        //   "application": [
+        //     {
+        //       "toObject": "DataLabels",
+        //       "styles": "leftYAxisFont"
+        //     }
+        //   ]
+        // }
     };
   }
 
@@ -145,6 +196,20 @@ abbreviateNumber(number: any){
     var hello = number/scale;                	  
     var result = hello.toFixed(2) + prefix;
     return result;
+}
+
+convertDelta(deltaValue: any) {
+  var modifiedDeltaValue: any;
+  if (deltaValue === 0 || deltaValue === 0.0) {
+    modifiedDeltaValue = "\xa0\xa0"+0+ "%" + '\u0394';
+   }
+  if (deltaValue <= 100 && !(deltaValue === 0 || deltaValue === 0.0)) {
+      modifiedDeltaValue = "\xa0\xa0" + deltaValue.toFixed(1).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "%" + '\u0394';
+  }
+  if (deltaValue > 100) {
+    modifiedDeltaValue = "\xa0\xa0" + '100+' + "%" + '\u0394';
+  }
+  return modifiedDeltaValue;
 }
 
   // $scope.$on("refreshLoyaltyTileData", function(event, message) {

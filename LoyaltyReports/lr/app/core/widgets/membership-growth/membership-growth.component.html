@@ -8,7 +8,7 @@
 
 <!-- <div>Membership Growth content</div> -->
 <!-- <div id="membershipGrowthContainer">FusionCharts will render here</div> -->
-<div *ngIf = "!membershipGrowthData.length == 0">
+<div id="membershipGrowthChart" *ngIf = "!membershipGrowthData.length == 0">
 	<fusioncharts
 		[chartConfig]=chartConfig
 		[dataSource]=dataSource >

@@ -22,6 +22,9 @@ export class AppComponent {
       margins: [10, 12],
       maxCols: 2,
       maxRows: 6,
+      resizable: {
+        enabled: false
+      },
       draggable: {
         enabled: true
       }

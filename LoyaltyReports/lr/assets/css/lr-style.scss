@@ -667,3 +667,15 @@ ul.filter_icon li.long img.load ~ .x-tooltip { left: -42px; }
 select.purchaseActivitySummaryController { position: absolute; top: 4px; right: 40px; max-width: 150px; }
 
 #loyaltyProductSelectedgrid .ui-grid-cell .sfl.pt10.pl10 { white-space: nowrap !important; overflow: hidden; text-overflow: ellipsis; }
+
+#widgetHeader {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#membershipGrowthChart .fusioncharts-container .raphael-group-152-dataset-axis text {
+	fill: #74A0D7 !important;
+}
+#membershipGrowthChart .fusioncharts-container .raphael-group-173-dataset-axis text {
+	fill: #8BD2C6 !important;
+}
