@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {CompactType, DisplayGrid, GridsterConfig, GridsterItem, GridType} from 'angular-gridster2';
 import { DataStorageService } from 'lr/app/shared/data-storage.service';
 import { LrAnalyticService } from 'lr/app/core/lr-analytic.service';
+import { GridsterCompact } from 'angular-gridster2/lib/gridsterCompact.service';
 
 @Component({
   selector: 'app-root',
@@ -19,21 +20,49 @@ export class AppComponent {
   ngOnInit() {
     this.options = {
       gridType: GridType.Fit,
-      margins: [10, 12],
+      compactType: CompactType.None,
+      margin: 10,
+      outerMargin: true,
+      outerMarginTop: null,
+      outerMarginRight: null,
+      outerMarginBottom: null,
+      outerMarginLeft: null,
+      useTransformPositioning: true,
+      mobileBreakpoint: 640,
+      minCols: 2,
       maxCols: 2,
+      minRows: 3,
       maxRows: 6,
-      resizable: {
-        enabled: false
-      },
+      maxItemCols: 1,
+      minItemCols: 1,
+      maxItemRows: 3,
+      minItemRows: 1,
+      defaultItemCols: 1,
+      defaultItemRows: 3,
+      keepFixedHeightInMobile: false,
+      keepFixedWidthInMobile: false,
+      scrollSensitivity: 10,
+      scrollSpeed: 20,
+      ignoreMarginInRow: false,
       draggable: {
-        enabled: true
-      }
+        enabled: true,
+      },
+      resizable: {
+        enabled: false,
+      },
+      swap: true,
+      pushDirections: {north: true, east: true, south: true, west: true},
+      pushResizeItems: false,
+      displayGrid: DisplayGrid.Always,
+      disableWindowResize: false,
+      disableWarnings: false,
+      scrollToNewItems: false
     };
 
     this.dashboards = [
-      { x: 0, y: 0, cols: 1, rows: 3, label: 'Membership Growth'},
-      { x: 1, y: 0, cols: 1, rows: 3, label: 'Sales Transaction Summary'},
-      { x: 0, y: 3, cols: 1, rows: 3, label: 'Points Activity Summary'}
+      {cols: 1, rows: 3, y: 0, x: 0, label: 'Membership Growth'},
+      {cols: 1, rows: 3, y: 0, x: 1, label: 'Sales Transaction Summary'},
+      {cols: 1, rows: 3, y: 3, x: 0, label: 'Points Activity Summary'}
     ];
 
     this.lrAnalyticService.subscribe();

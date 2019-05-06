@@ -117,7 +117,7 @@ export class MembershipGrowthComponent implements OnInit {
 
     this.chartConfig = {
       width: '700',
-      height: '220',
+      height: '200',
       type: 'mscombidy2d',
       dataFormat: 'json',
     };

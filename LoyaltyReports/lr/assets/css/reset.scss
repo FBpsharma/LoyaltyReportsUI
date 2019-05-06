@@ -1074,3 +1074,11 @@ angular2-multiselect .selected-list .c-list .c-token span { color:#fff; }
 
 .icon-true, .icon-wrong { border:2px #51c949 solid; border-radius: 100%; padding: 4px 3px 3px 3px; display: block; width: 25px; height: 25px; text-align: center; }
 .icon-wrong { border-color: #a22727; color:#a22727; }
+
+.glyphicon-trash{background: url(../imgs/sprite-3.png) -9px -105px no-repeat; background-size: 320px auto !important;;height:17px;width:17px;display:block;padding:0;margin:0;color:transparent}
+.tileWatermark {
+    padding-top: 80px;
+    font-size: 1.5em !important;
+    text-align: center;
+    color: #999;
+}

@@ -43,8 +43,8 @@ timepicker-pop.input-group{position:relative}
 div[ng-controller='loyaltyCockpitWidgetCtrl'] .table-resp td:nth-of-type(2),
 div[ng-controller='loyaltyCockpitWidgetCtrl'] .table-resp td:nth-of-type(3){text-align:right}
 #loyaltyDBContainer .box-header-btns{padding:10px}
-#loyaltyDBContainer .box-header-btns a{width:20px;height:20px;display:block;padding:0;margin:0}
-#loyaltyDBContainer .box-header-btns a:hover{background:none}
+#loyaltyDBContainer .box-header-btns a, .cockpit-box-header-btns a{width:20px;height:20px;display:block;padding:0;margin:0}
+#loyaltyDBContainer .box-header-btns a:hover, .cockpit-box-header-btns a:hover{background:none}
 #loyaltyDBContainer .segmentSelection .tfooter,
 #loyaltyDBContainer .tile_medium .tfooter{border:0 none;background:none;width:auto;height:auto;padding:0;margin:0;min-height:inherit;top:-33px;right:28px}
 #loyaltyDBContainer .segmentSelection .tfooter > ul > li,
@@ -89,8 +89,8 @@ div[ng-controller='loyaltyCockpitWidgetCtrl'] .table-resp td:nth-of-type(3){text
 .cockpit .multiSelect > button{min-width:150px}
 .cockpit .bgwhite.dataArea ul.tablex{overflow:hidden;position:relative;display:block;list-style:none;padding:0 !important}
 .cockpit #campaign .table-resp td,.cockpit .table-resp th{text-align:right;padding:7px 5px;font-size:12px}
-.cockpit .box-header-btns{top:2px;right:0;display:none}
-.cockpit .box-header,.cockpit .box-header1{padding:0}
+.cockpit .box-header-btns, .cockpit-box-header-btns{top:2px;right:0;display:none}
+.cockpit .box-header,.cockpit .box-header1, .cockpit-box-header1{padding:0}
 .cockpit .box-header h3,.cockpit .box-header1 h3{margin:0;padding:14px 0 12px 10px;font-weight:500;color:#000;border-bottom:1px solid #ddd;font-size:14px}
 .cockpit .relx img{max-width:40%;margin:30px auto 5px auto}
 .cockpit .gridster .segment-box-content h4,.cockpit .gridster .segment-box-content h6{color:#666;font-size:12px;padding:5px 0}
@@ -98,8 +98,8 @@ div[ng-controller='loyaltyCockpitWidgetCtrl'] .table-resp td:nth-of-type(3){text
 .cockpit .gridster .segment-box-content h5{font-size:13px}
 .cockpit #cockpitsContainer .padder.minx .x-spec-button.back{background-position:4px -316px !important}
 #loyaltyDBContainer .box:hover .tfooter{display:block}
-.box:hover .box-header-btns {display: block}
-.tileWatermark{top :80px;opacity:1;font-size:3em;width:100%;text-align:center;z-index:1000}
+.box:hover .box-header-btns, .box:hover .cockpit-box-header-btns {display: block}
+.tileWatermark{top:80px;opacity:1;font-size:3em;width:100%;text-align:center;z-index:1000}
 #loyaltyDBContainer .box:hover .tfooter{display:block}
 rect.dimple-tooltip{stroke-width:1 !important} 
 text.dimple-tooltip{ padding:2px 2px !important;margin:5px 5px !important;font-size:12px !important;font-weight:normal;font-family:"Myriad Pro" }
@@ -673,9 +673,30 @@ select.purchaseActivitySummaryController { position: absolute; top: 4px; right: 
     margin-top: 5px;
     margin-bottom: 5px;
 }
+#membershipGrowthChart {
+    margin-top: 10px;
+}
 #membershipGrowthChart .fusioncharts-container .raphael-group-152-dataset-axis text {
 	fill: #74A0D7 !important;
 }
 #membershipGrowthChart .fusioncharts-container .raphael-group-173-dataset-axis text {
 	fill: #8BD2C6 !important;
 }
+
+#loyaltyReportsGrid gridster-item {
+    height: 235px !important;
+}
+
+#testGrid gridster {
+    min-height: 500px;
+    overflow: visible !important;
+    background: #fff;
+}
+
+#testGrid .gridster-preview {
+    background: #fff;
+    height: 235px;
+}
+
+.cockpit-box-header1 h3{margin:0;padding:14px 0 25px 10px;border-bottom:1px solid #ddd}
+.cockpit-box-header1 h3 div{font-weight:500;color:#000;font-size:14px}
