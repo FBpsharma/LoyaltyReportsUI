@@ -368,4 +368,26 @@ export class CommonService {
     }
     
   };
+
+  getFormattedDate(date: any) {
+		if(date && date != null){
+		 if(!(date instanceof Date)){
+			date = new Date(date);
+		 }
+		  var year = date.getFullYear();
+		  var month = (1 + date.getMonth()).toString();
+		  month = month.length > 1 ? month : '0' + month;
+		  var day = date.getDate().toString();
+		  day = day.length > 1 ? day : '0' + day;
+
+		  var df = localStorage.getItem('dateFormat')
+		  var dateStr = month + '/' + day + '/' + year;
+		  if(df =="dd-MM-yyyy"){
+			  dateStr = day + '/' + month + '/' + year;
+		  }
+		  return dateStr;
+		}else{
+			return "";
+		}
+	}
 }

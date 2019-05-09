@@ -187,6 +187,9 @@ export class LrHeaderComponent implements OnInit, OnDestroy {
       // this.memberProfilerService.removeItem();
       this.router.navigate(['/SegmentationBuilder']);
     }
+    else if (this.subMenu == 'loyalty/cockpit') {
+      this.router.navigate(['loyalty/cockpit']);
+    }
     else if (this.subMenu != null) {
       // this.memberProfilerService.removeItem();
       location.href = location.origin + "/#" + this.subMenu;
@@ -203,6 +206,9 @@ export class LrHeaderComponent implements OnInit, OnDestroy {
 
     if (this.subMenu == "/MemberProfiler/") {
       this.router.navigate(['MemberProfiler/search']);
+    }
+    else if (this.subMenu == 'loyalty/cockpit') {
+      this.router.navigate(['loyalty/cockpit']);
     }
     else if (this.subMenu != null) {
       location.href = location.origin + "/#" + this.subMenu;

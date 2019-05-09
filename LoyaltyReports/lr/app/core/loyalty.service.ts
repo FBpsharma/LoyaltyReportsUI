@@ -12,4 +12,8 @@ export class LoyaltyService {
   getLoyaltyCockpitTileData(obj: object): Observable<any> {
     return this.httpClient.post(this.loyaltyCockpitEndpoint, obj, {observe: 'body', responseType: 'json'});
   }
+
+  getLoyaltyCockpitDateRange(): Observable<any> {
+    return this.httpClient.get('/LYLReports/prefetch/analytic/getAvailableDateRangeForLoyaltyCockpit', {observe: 'body', responseType: 'json'});
+  }
 }
